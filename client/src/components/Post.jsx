@@ -5,7 +5,7 @@ export default function Post({ posts }) {
   const post = posts.find(post => post.id === parseInt(id));
 
   return post ? (
-    <div>
+    <div className="post">
       <h1>{post.title}</h1>
       <p>{post.content}</p>
     </div>
